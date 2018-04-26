@@ -7,6 +7,7 @@ capybara-*.html
 /db/*.sqlite3-journal
 /public/system
 /coverage/
+config/database.yml
 /spec/tmp
 *.orig
 rerun.txt
@@ -42,3 +43,10 @@ bower.json
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# Ignore application configuration
+/config/application.yml
+
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml
