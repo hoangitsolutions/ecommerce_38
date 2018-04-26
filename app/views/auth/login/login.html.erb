@@ -1,0 +1,23 @@
+<% provide :title, t(".log_in") %>
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="panel panel-default">
+      <div class="panel-heading"><%= t ".log_in" %></div>
+      <div class="panel-body">
+        <%= form_for :login, url: "#", remote: true do |f| %>
+          <%= f.label :email, t(".l_email") %>
+          <%= f.email_field :email, class: "form-control" %>
+          <%= f.label :password, t(".l_password") %>
+          <%= link_to t(".forgot"), "#" %>
+          <%= f.password_field :password, class: "form-control" %>
+          <%= f.label :remember_me, class: "checkbox inline" do %>
+            <%= f.check_box :remember_me %>
+            <span><%= t ".remember" %></span>
+          <% end %>
+          <%= f.submit t(".log_in"), class: "btn btn-primary" %>
+        <% end %>
+        <p><%= t ".new" %> <%= link_to t(".sign_up"), "#" %></p>
+      </div>
+    </div>
+  </div>
+</div>
