@@ -1,123 +1,120 @@
 <!-- main menu  navbar -->
 <nav class="navbar navbar-default navbar-top" role="navigation" id="main-Nav">
-  <div class="container">
-    <div class="row">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <span id="grouped-one" class="visible-xs pull-left" onclick="openNav()">&#9776; </span>
-        <span id="grouped-two" class="visible-xs pull-right">
-        <!-- Authentication Links -->
-          <a class="top-a" href="#" >
-            <%= t ".home" %>
-          </a>&nbsp;
-          <a href="#" data-toggle="modal" data-target="#login-modal">
-            <%= t ".admin" %>
-          </a>
-          <a class="top-a" href="#"><strong></strong></a>
-          <a class="top-a" href="#">
-            <i class="fa fa-btn fa-sign-out"></i>
-            <small><%= t ".exit" %></small>
-          </a>
-        <% end %>
-        </span>
-      </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="main-mav-top">
-        <ul class="nav navbar-nav">
-          <li>
-            <a id="mlinkhome" href="#" title=""><b class="glyphicon glyphicon-home"></b> <%= t ".home" %> </a> </li>
-          <li>
-            <a href="#" ><%= t ".phone" %> </a>
-          </li>
-          <li >
-            <a href="#" > <%= t ".laptop" %> </a>
-          </li>
-          <li>
-            <a href="#" > <%= t ".pc" %> </a>
-          </li>
-        </ul>
-        <ul class="nav navbar-nav pull-right">
-          <li class="dropdown">
-            <a  class="dropdown-toggle" data-toggle="dropdown">
-              <span class="glyphicon glyphicon-shopping-cart">
-                <span class="badge">1</span>
-              </span> <%= t ".cart" %>
-              <b class="caret"></b>
-            </a>
-            <ul id="cartview" class="dropdown-menu">
-              <div class="table-responsive">
-                 <table class="table table-hover" >
-                  <thead>
-                  <tr>
-                    <th><%= t ".image" %></th>
-                    <th><%= t ".quantity" %></th>
-                    <th><%= t ".name" %> <SPAN></SPAN></th>
-                    <th><%= t ".price" %></th>
-                  </tr>
-                </thead>
-                   <tbody>
-                    <!-- for -->
-                     <tr>
-                       <td> <!-- images --> <img class="card-img img-circle" src="#" alt="dell"></td>
-                       <td><!-- qty --></td>
-                       <td><!-- name --></td>
-                       <td><!-- price --> <%= t ".vnd" %></td>
-                     </tr>
-                     <!-- for -->
-                   </tbody>
-                 </table>
-                 <a href="#" type="button" class="btn btn-success"> <%= t ".detailcart" %> </a>
-                 <a href="#" type="button" class="btn btn-danger pull-right"> <%= t ".delete" %> </a>
-              </div>
-              <div class="table-responsive">
-                <table class="table table-hover" >
-                  <thead>
-                    <tr>
-                      <th><%= t ".image" %></th>
-                      <th><%= t ".quantity" %></th>
-                      <th><%= t ".name" %> <SPAN></SPAN></th>
-                      <th><%= t ".price" %></th>
-                    </tr>
-                  </thead>
-                   <tbody>
-                    <td colspan="3"><%= t ".curempty" %></td>
-                   </tbody>
-                 </table>
-              </div>
-              <% end %>
-            </ul>
-          </li>
-          <!-- Authentication Links -->
-          <li>
-            <a href="#" data-toggle="modal" data-target="#login-modal"><%= t ".log_in" %></a>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                Quan <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-                <li><a href="#"><%= t ".profile" %></a></li>
-                <li>
-                  <a href="#"><i class="fa fa-btn fa-sign-out"></i><%= t ".log_out" %></a>
-                </li>
-            </ul>
-          </li>
-          <% end %>
-        </ul>
-      </div>
-    </div>
-  </div>
+ <div class="container">
+  <div class="row">
+   <!-- Brand and toggle get grouped for better mobile display -->
+   <div class="navbar-header">
+    <span id="grouped-one" class="visible-xs pull-left" onclick="openNav()">&#9776; </span>
+    <span id="grouped-two" class="visible-xs pull-right">
+     <!-- Authentication Links -->
+     <a class="top-a" href="#" >
+      <%= t ".home" %>
+    </a>&nbsp;
+    <a href="#" data-toggle="modal" data-target="#login-modal">
+      <%= t ".admin" %>
+    </a>
+    <a class="top-a" href="#"><strong></strong></a>
+    <a class="top-a" href="#">
+      <i class="fa fa-btn fa-sign-out"></i>
+      <small><%= t ".exit" %></small>
+    </a>
+  </span>
+</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="main-mav-top">
+  <ul class="nav navbar-nav">
+   <li>
+    <a id="mlinkhome" href="#" title=""><b class="glyphicon glyphicon-home"></b> <%= t ".home" %> </a> </li>
+    <li>
+     <a href="#" ><%= t ".phone" %> </a>
+   </li>
+   <li >
+     <a href="#" > <%= t ".laptop" %> </a>
+   </li>
+   <li>
+     <a href="#" > <%= t ".pc" %> </a>
+   </li>
+ </ul>
+ <ul class="nav navbar-nav pull-right">
+  <li class="dropdown">
+   <a  class="dropdown-toggle" data-toggle="dropdown">
+    <span class="glyphicon glyphicon-shopping-cart">
+     <span class="badge">1</span>
+   </span> <%= t ".cart" %>
+   <b class="caret"></b>
+ </a>
+ <ul id="cartview" class="dropdown-menu">
+  <div class="table-responsive">
+   <table class="table table-hover" >
+    <thead>
+     <tr>
+      <th><%= t ".image" %></th>
+      <th><%= t ".quantity" %></th>
+      <th><%= t ".name" %> <SPAN></SPAN></th>
+      <th><%= t ".price" %></th>
+    </tr>
+  </thead>
+  <tbody>
+   <!-- for -->
+   <tr>
+    <td> <!-- images --> <img class="card-img img-circle" src="#" alt="dell"></td>
+    <td><!-- qty --></td>
+    <td><!-- name --></td>
+    <td><!-- price --> <%= t ".vnd" %></td>
+  </tr>
+  <!-- for -->
+</tbody>
+</table>
+<a href="#" type="button" class="btn btn-success"> <%= t ".detailcart" %> </a>
+<a href="#" type="button" class="btn btn-danger pull-right"> <%= t ".delete" %> </a>
+</div>
+<div class="table-responsive">
+ <table class="table table-hover" >
+  <thead>
+   <tr>
+    <th><%= t ".image" %></th>
+    <th><%= t ".quantity" %></th>
+    <th><%= t ".name" %> <SPAN></SPAN></th>
+    <th><%= t ".price" %></th>
+  </tr>
+</thead>
+<tbody>
+ <td colspan="3"><%= t ".curempty" %></td>
+</tbody>
+</table>
+</div>
+</ul>
+</li>
+<!-- Authentication Links -->
+<li>
+ <a href="#" data-toggle="modal" data-target="#login-modal"><%= t ".log_in" %></a>
+</li>
+<li class="dropdown">
+ <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  Quan <span class="caret"></span>
+</a>
+<ul class="dropdown-menu" role="menu">
+  <li><a href="#"><%= t ".profile" %></a></li>
+  <li>
+   <a href="#"><i class="fa fa-btn fa-sign-out"></i><%= t ".log_out" %></a>
+ </li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
 </nav>
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
-  <%= t ".close" %></a>
-  <a href="#"><%= t ".phone" %></a>
-  <a href="#"><%= t ".laptop" %></a>
-  <a href="#"><%= t ".pc" %></a>
-  <a href="#">
+   <%= t ".close" %></a>
+   <a href="#"><%= t ".phone" %></a>
+   <a href="#"><%= t ".laptop" %></a>
+   <a href="#"><%= t ".pc" %></a>
+   <a href="#">
     <span class="glyphicon glyphicon-shopping-cart">
-      <span class="badge"></span>
-    </span> <%= t ".cart" %>
-  </a>
+     <span class="badge"></span>
+   </span> <%= t ".cart" %>
+ </a>
 </div>

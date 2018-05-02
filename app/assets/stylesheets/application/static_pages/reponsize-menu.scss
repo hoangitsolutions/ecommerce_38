@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: $111;
+    background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 40px;
@@ -20,7 +20,7 @@
     transition: 0.3s
 }
 .sidenav a:hover, .offcanvas a:focus {
-    color: $f1f1f1;
+    color: #f1f1f1;
 }
 .sidenav .closebtn {
     position: absolute;
@@ -39,7 +39,7 @@
     }
 }
 .top-a {
-    color: $FFFFFF;
+    color: #FFFFFF;
 }
 .top-a:hover {
     text-decoration: none;
