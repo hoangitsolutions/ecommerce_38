@@ -2,5 +2,5 @@ class Comment < ApplicationRecord
   belongs_to :user
   belongs_to :product
   validates :content, presence: true
-  validates :ipaddress
+  validates :ipaddress, presence: true
 end

@@ -64,6 +64,41 @@ vi:
     footer:
       design: "Thiết Kế : Framgia Team"
       click: "Click lên đâu trang"
+  admin:
+    categories:
+      noparent: "No Parent"
+      index:
+        title: "Thể Loại"
+        add: "Thêm"
+        edit: "Sửa"
+        delete: "Xóa"
+        confirm_delete: "Bạn có muốn xóa nó không?"
+        id: "ID"
+        name: "Tên"
+        function: "Chức năng"
+        not_find_cat: "Không tìm thấy danh mục"
+        parent_id: "ID Parent"
+      new:
+        title: "Thêm danh mục"
+        success_add_msg: "Thêm danh mục thành công"
+        danger_add_msg: "Thêm danh mục thất bại"
+        success_delete_msg: "Xóa danh mục thành công"
+        danger_delete_msg: "Xóa danh mục không thành công"
+        exist_error: "Tên Thể Loại Đã Tồn Tại"
+      edit:
+        title: "Sửa Danh Mục"
+        success_edit_msg: "Sửa danh mục thành công"
+        edit_categories: "Sửa Danh Mục"
+      form:
+        name: "Tên"
+        parent: "Parent"
+        submit: "Submit"
+        parent_id: "Parent ID"
+      subcategory:
+        confirm_delete: "Bạn có muốn xóa nó không?"
+        edit: "Sửa"
+        delete: "Xóa"
+
   auth:
     login:
       login:
@@ -91,3 +126,8 @@ vi:
         l_password: "Mật khẩu"
         confirmation: "Nhập Lại Mật Khẩu"
         submit: "Cập nhật"
+  shared:
+    error_messages:
+      text_div_1: "The form contains"
+      one: "%{count} error"
+      other: "%{count} errors"
