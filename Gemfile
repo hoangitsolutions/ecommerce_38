@@ -11,6 +11,7 @@ gem "config"
 gem "bcrypt", "3.1.11"
 gem "faker", "1.7.3"
 gem "carrierwave", "1.2.2"
+gem "paypal-sdk-rest"
 gem "mini_magick", "4.7.0"
 gem "i18n-js"
 gem "will_paginate", "3.1.6"
@@ -43,7 +44,7 @@ end
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
   gem "capybara", "~> 2.13"
-  gem 'selenium-webdriver'
+  gem "selenium-webdriver"
 end
 
 group :development do
